@@ -1,13 +1,24 @@
-function getCommonElements(array1, array2) {
-    // Change code below this line
-  let commonArray = [];
-    for (let i = 0; i <= array1.length; i += 1) {
-      if (array2.includes(array1[1])) {
-        commonArray.push(array1[1]);
-      }
-    }
-    return commonArray;
-  
-  
-   // Change code above this line
+//посчитать сумму нечетных чисел в массиве//
+const numbers = [111,5,8,9,12,44,15,27,38,18,11];
+let total = 0;
+for (const number of numbers) {
+  if (number % 2 !== 0) {
+    total += number;
   }
+}
+console.log(total);
+
+/*Поиск логина - 
+логина нет - Юзер [логин] не найден
+логина есть - Юзер [логин] найден*/
+const logins = ['dgsdgsd', 'doose', 'apoi1', 'rtt'];
+const loginToFind = 'doose';
+let message = '';
+
+for (const login of logins) {
+  if (login === loginToFind) {message = `Юзер ${loginToFind} найден`;
+  break;
+}
+  message = `Юзер ${loginToFind} не найден`;
+}
+console.log(message);
