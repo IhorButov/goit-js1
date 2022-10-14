@@ -6,7 +6,7 @@ for (const number of numbers) {
     total += number;
   }
 }
-console.log(total);
+console.log('сумму нечетных чисел: ', total);
 
 /*Поиск логина - 
 логина нет - Юзер [логин] не найден
@@ -21,4 +21,24 @@ for (const login of logins) {
 }
   message = `Юзер ${loginToFind} не найден`;
 }
-console.log(message);
+console.log('Поиск логина: ', message);
+/*поиск самого маленького числа в массиве*/
+const littleNumbers = [51,18,13,24,7,1, 85,19];
+let smallestNumber = littleNumbers[0];
+for (const littleNumber of littleNumbers) {
+  if (littleNumber < smallestNumber) {
+    smallestNumber = littleNumber
+  }
+}
+console.log('самое маленькое число: ', smallestNumber);
+
+const add = function (x, y) {
+  console.log(x);
+  console.log(y);
+  console.log('doing of function add');
+}
+const r1 = add(5, 7)
+console.log(r1);
+
+const r2 = add(0, 2)
+console.log(r2);
