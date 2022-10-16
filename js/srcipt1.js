@@ -14,14 +14,23 @@ console.log('сумму нечетных чисел: ', total);
 const logins = ['dgsdgsd', 'doose', 'apoi1', 'rtt'];
 const loginToFind = 'doose';
 let message = '';
-
-for (const login of logins) {
+/*for (const login of logins) {
   if (login === loginToFind) {message = `Юзер ${loginToFind} найден`;
   break;
 }
   message = `Юзер ${loginToFind} не найден`;
 }
-console.log('Поиск логина: ', message);
+console.log('Поиск логина: ', message);*/
+const findLogin = function (allLogins, loginToFind) {
+  console.log(logins);
+  console.log(loginToFind);
+}
+console.log(findLogin(logins, 'qetrrt'));
+console.log(findLogin(logins, 'doose'));
+console.log(findLogin(logins, 'qetyb'));
+console.log(findLogin(logins, 'rtt'));
+
+
 /*поиск самого маленького числа в массиве*/
 const littleNumbers = [51,18,13,24,7,1, 85,19];
 let smallestNumber = littleNumbers[0];
@@ -31,14 +40,25 @@ for (const littleNumber of littleNumbers) {
   }
 }
 console.log('самое маленькое число: ', smallestNumber);
-
-const add = function (x, y) {
-  console.log(x);
-  console.log(y);
-  console.log('doing of function add');
+/*function принимает массив цен(чисел) и возвращает их сумму*/
+/*const cart = [54,28,105,70,92,17,120,12,25,90];
+let cartTotal = 0;
+for (const value of cart) {
+  total += value;
 }
-const r1 = add(5, 7)
-console.log(r1);
+console.log(total)*/ 
 
-const r2 = add(0, 2)
-console.log(r2);
+const calculateTotalPrice = function (items) {
+  console.log('items inside function: ', items);
+
+  let total = 0;
+
+for (const item of items) {
+  total += item;
+}
+return total
+}
+
+console.log(calculateTotalPrice([1,2,3]));
+console.log(calculateTotalPrice([5,10,15,20]));
+console.log(calculateTotalPrice([100,200,300]));
