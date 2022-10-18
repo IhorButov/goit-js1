@@ -64,7 +64,7 @@ const findFrienByName = function (allFriends, name) {
 
 console.log(findFrienByName(friends, 'Poly'))*/
 
-const getAllNames = function (allFriends) {
+/*const getAllNames = function (allFriends) {
     const names = []; 
     for (const friend of allFriends) {
         console.log(friend.name);
@@ -73,3 +73,34 @@ const getAllNames = function (allFriends) {
     return names;
 }
 console.log(getAllNames(friends));
+
+const getOnlineFriends = function (allFriends) {
+    const onlineFriedns = []; 
+    for (const friend of allFriends) {
+        console.log(friend);
+        console.log(friend.online);
+        if (friend.online) {
+            onlineFriedns.push(friend);
+        }
+    }
+    return onlineFriedns;
+}
+console.log(getOnlineFriends(friends));*/
+const cart = {
+    items: [],
+    getItems() {
+    },
+    add(product) {},
+    remove(productName0),
+    clear() {},
+    countTotalPrice() {},
+    increaseQuantity(productName) {},
+    decreaseQuantity(productName) {},
+};
+
+console.table(cart.getItems());
+
+cart.add({ name: 'Apple', price: 50});
+cart.add({ name: 'Lemon', price: 60});
+cart.add({ name: 'Lemon', price: 60});
+cart.add({ name: 'Strawberry', price: 110});
