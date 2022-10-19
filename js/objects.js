@@ -86,6 +86,12 @@ const getOnlineFriends = function (allFriends) {
     return onlineFriedns;
 }
 console.log(getOnlineFriends(friends));*/
+
+let link = 'https://mu-site.com/about';
+if (!link.endsWith('/')) {
+    link += link + '/';
+}
+console.log(link);
 const cart = {
     items: [],
     getItems() {
