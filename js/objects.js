@@ -118,7 +118,7 @@ for (let loop = 0; loop < numbers.length; loop += 1) {
         const firstValue = numbers[i -1];
         const secondValue = numbers[i];
         
-        if (firstValue >secondValue) {
+        if (firstValue > secondValue) {
             numbers[i -1] = secondValue;
             numbers[i] = firstValue
         }
