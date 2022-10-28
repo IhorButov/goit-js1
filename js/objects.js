@@ -92,7 +92,7 @@ console.log(getOnlineFriends(friends));*/
 if (!link.endsWith('/')) {
     link += link + '/';
 }
-console.log(link);
+console.log(link);*/
 const cart = {
     items: [],
     getItems() {
@@ -110,9 +110,9 @@ console.table(cart.getItems());
 cart.add({ name: 'Apple', price: 50});
 cart.add({ name: 'Lemon', price: 60});
 cart.add({ name: 'Lemon', price: 60});
-cart.add({ name: 'Strawberry', price: 110});*/
+cart.add({ name: 'Strawberry', price: 110});
 
-const numbers = [1,5,6,7,9,2,4,3,8];
+/*const numbers = [1,5,6,7,9,2,4,3,8];
 for (let loop = 0; loop < numbers.length; loop += 1) {
     for (let i = 1; i < numbers.length - loop; i += 1) {
         const firstValue = numbers[i -1];
@@ -125,4 +125,4 @@ for (let loop = 0; loop < numbers.length; loop += 1) {
     }
 }
 
-console.log(numbers);
+console.log(numbers);*/
