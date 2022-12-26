@@ -1,14 +1,18 @@
-const profile = {
-    name: 'Ihor',
-    tag: 'ggg',
-    location: 'niko',
-    avatar: 'www',
-    stats: {
-        followers: 5031,
-        views: 4444,
-        likes: 1234,
-    }
-}
+const cart = {
+    items: [],
+    getItems() {},
+    add(product) {
+        this.items.push(product);
+    },
+    remove(productName) {},
+    clearInterval() {},
+    countTotalPrice(productName) {},
+    increaseQuantity(productName) {},
+};
 
-const {name, tag, location} = profile;
+cart.add({naem: 'apple', price: 50});
+cart.add({naem: 'lemon', price: 60});
+cart.add({naem: 'lemon', price: 60});
+cart.add({naem: 'strawberry', price: 110});
 
+console.table(cart.getItems());

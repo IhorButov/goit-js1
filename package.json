@@ -2,9 +2,5 @@
   "name": "goit-js1",
   "lockfileVersion": 2,
   "requires": true,
-  "packages": {
-    "": {
-      "name": "goit-js1"
-    }
-  }
+  "packages": {}
 }
