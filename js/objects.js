@@ -1,4 +1,4 @@
-const cart = {
+/*const cart = {
     items: [],
     getItems() {},
     add(product) {
@@ -15,4 +15,11 @@ cart.add({naem: 'lemon', price: 60});
 cart.add({naem: 'lemon', price: 60});
 cart.add({naem: 'strawberry', price: 110});
 
-console.table(cart.getItems());
+console.table(cart.getItems());*/
+
+const user = {
+    name: Ihor,
+    age: 34,
+}
+
+console.log(user);
